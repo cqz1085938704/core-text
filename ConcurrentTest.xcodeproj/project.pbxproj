@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323EA2DF1ECEA0E200042120 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323EA2DE1ECEA0E200042120 /* CoreTelephony.framework */; };
 		328E910C1EB1D75A00F94120 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E910B1EB1D75A00F94120 /* main.m */; };
 		328E910F1EB1D75A00F94120 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E910E1EB1D75A00F94120 /* AppDelegate.m */; };
 		328E91121EB1D75A00F94120 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E91111EB1D75A00F94120 /* ViewController.m */; };
 		328E91151EB1D75A00F94120 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328E91131EB1D75A00F94120 /* Main.storyboard */; };
 		328E91171EB1D75A00F94120 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 328E91161EB1D75A00F94120 /* Assets.xcassets */; };
 		328E911A1EB1D75A00F94120 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 328E91181EB1D75A00F94120 /* LaunchScreen.storyboard */; };
+		328E91231EB1D79D00F94120 /* DownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 328E91221EB1D79D00F94120 /* DownloadOperation.m */; };
+		329D074D1EC46BB5000948BA /* OperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 329D074C1EC46BB5000948BA /* OperationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323EA2DE1ECEA0E200042120 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		328E91071EB1D75A00F94120 /* ConcurrentTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrentTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		328E910B1EB1D75A00F94120 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		328E910D1EB1D75A00F94120 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +30,10 @@
 		328E91161EB1D75A00F94120 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		328E91191EB1D75A00F94120 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		328E911B1EB1D75A00F94120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		328E91211EB1D79D00F94120 /* DownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadOperation.h; sourceTree = "<group>"; };
+		328E91221EB1D79D00F94120 /* DownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadOperation.m; sourceTree = "<group>"; };
+		329D074B1EC46BB5000948BA /* OperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationManager.h; sourceTree = "<group>"; };
+		329D074C1EC46BB5000948BA /* OperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				323EA2DF1ECEA0E200042120 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		323EA2DD1ECEA0E200042120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323EA2DE1ECEA0E200042120 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		328E90FE1EB1D75A00F94120 = {
 			isa = PBXGroup;
 			children = (
 				328E91091EB1D75A00F94120 /* ConcurrentTest */,
 				328E91081EB1D75A00F94120 /* Products */,
+				323EA2DD1ECEA0E200042120 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +80,10 @@
 				328E910E1EB1D75A00F94120 /* AppDelegate.m */,
 				328E91101EB1D75A00F94120 /* ViewController.h */,
 				328E91111EB1D75A00F94120 /* ViewController.m */,
+				329D074B1EC46BB5000948BA /* OperationManager.h */,
+				329D074C1EC46BB5000948BA /* OperationManager.m */,
+				328E91211EB1D79D00F94120 /* DownloadOperation.h */,
+				328E91221EB1D79D00F94120 /* DownloadOperation.m */,
 				328E91131EB1D75A00F94120 /* Main.storyboard */,
 				328E91161EB1D75A00F94120 /* Assets.xcassets */,
 				328E91181EB1D75A00F94120 /* LaunchScreen.storyboard */,
@@ -110,6 +132,7 @@
 				TargetAttributes = {
 					328E91061EB1D75A00F94120 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZAB4L2B7UQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -153,6 +176,8 @@
 				328E91121EB1D75A00F94120 /* ViewController.m in Sources */,
 				328E910F1EB1D75A00F94120 /* AppDelegate.m in Sources */,
 				328E910C1EB1D75A00F94120 /* main.m in Sources */,
+				329D074D1EC46BB5000948BA /* OperationManager.m in Sources */,
+				328E91231EB1D79D00F94120 /* DownloadOperation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,9 +299,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZAB4L2B7UQ;
 				INFOPLIST_FILE = ConcurrentTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.dev.ConcurrentTest;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.hsbc.hsbcchina.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,9 +312,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZAB4L2B7UQ;
 				INFOPLIST_FILE = ConcurrentTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mycompany.dev.ConcurrentTest;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.hsbc.hsbcchina.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -311,6 +340,7 @@
 				328E91201EB1D75A00F94120 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
